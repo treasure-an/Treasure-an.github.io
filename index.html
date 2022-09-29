@@ -1,96 +1,62 @@
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>欢迎来到小田的快乐星球</title>
-  <style type="text/css">
-    .menu {
-      width: 694px;
-      height: 50px;
-      /*设置元素水平居中*/
-      margin: 50px auto 0;
-      /*去除内联元素间隙*/
-      font-size: 0;
-      /*去掉ul自带的.格式*/
-      list-style: none;
-      padding: 0;
-    }
-    .menu li{
-      /*将元素转换为行内块元素*/
-      display:inline-block;
-      width:98px;
-      height:48px;
-      border:1px solid gold;/*实心框*/
-      font-size:16px;
-      /*将边框合并*/
-      margin-right:-1px;
-      text-align:center;
-      line-height:48px;
-    }
-    .menu a{
-      color:pink;
-      /*去掉a元素的下划线*/
-      text-decoration: none;
-    }
-    /*鼠标位于元素位置时改变元素样式*/
-    .menu li:hover{
-      background-color: orange;
-    }
-    .menu a:hover{
-      color:#fff;
-    }
-   h2{align-content: space-between}
-  </style>
-  </head>
-  <body background="blue.jpg">
- <marquee>
-<font face="宋体" size="7" color="#996699"><em>please be happy.</em></font>
-</marquee>
-<ul class="menu">
-  <li><a href="#Home">Home</a></li>
-  <li><a href="#Photo">Photo</a></li>
-  <li><a href="#Daily life">Daily life</a></li>
-  <li><a href="https://www.weibo.com/login.php/">Blog</a></li>
-  <li><a href="test1.html">Contact</a></li>
-  <li><a href="test2.html">Aboutme</a></li>
-  <li><a href="#Thanks">Thanks</a></li>
-</ul>
-<from>
- 用户名:
-  <input type="text">
-  </br>
-  密码：
-  &nbsp;<input type="password">
-  </br>
-  性别：
-  &nbsp;<input id="man" type="radio" checked="checked" name="1" />男<input id="woman" type="radio"  name="1"/>女
-</form>
-<center>
- <a href="https://user.qzone.qq.com/infocenter">
- <img src="xixi.jpg" width="80px" height="80px" alt="小田">
- <br/>
- </a>
- <center>
- <a name="Home">
-  <h2>月是故乡明</h2>
- <img src="zhonglou.jpg" height="500px" width="800px">
- <img src="xian.jpg" height="500px" width="800px">
- </a>
-    
- <a name="Photo">
-  <h2>日常逛吃<h2>
- <img src="leshan.jpg" height="500px" width="800px">
- <img src="leshan2.jpg" height="500px" width="800px">
- <img src="beef.jpg" height="500px" width="800px">
- <img src="ikea.jpg" height="500px" width="800px">
- </a>
+    <meta charset="utf-8">
+    <title>My blog</title>
+    <style type="text/css">
+        .botCenter {
+            width: 100%;
+            height: 35px;
+            line-height: 35px;
+            background: #ccc;
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            font-size: 14px;
+            color: #000;
+            text-align: center;
+        }
  
- <a name="Daily life">
-  <h2>日常探店</h2>
- <img src="shop1.jpg" height="500px" width="800px">
-  <img src="shop2.jpg" height="500px" width="800px">
- </a>
+        #p1 {
+            position: absolute;
+            top: 30px;
+            left: 0px;
+        }
  
- <a name="Thanks">
-  <h2>阿里嘎多</h2>
- </a>
+        #p2 {
+            position: absolute;
+            top: 5px;
+            left: 98px;
+            z-index: 1;
+        }
+ 
+        #img1 {
+            position: absolute; /*position: static;默认定位,可以省略*/
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            right: 0px;
+            background-repeat: repeat-y;
+            background-image: url("C:\Users\97566\source\repos\B.png");
+            background-repeat: no-repeat;
+            z-index: 0;
+        }
+ 
+    </style>
+</head>
+  
+<body background="city.png"
+      style="background-repeat: no-repeat;background-attachment: fixed;background-size: 100% 100%;">
+    <img src="B.png" id="imag1" style="opacity: 0.5;" />
+    <img style="float: left" src="p.png" width="92" height="92" id="p1" />
+ 
+    <div style="line-height:20px;float:left;text-align:left;font-size:30px;" id="p2">
+        <p><font face="隶书">&nbsp;我的个人主页</font></p>
+        <h1 style="font-size:48px;font-family:Affair;">&nbsp;Fantasy island</h1>
+    </div>
+ 
+    <div id="footer" style="background-color:#e1fafb;clear:both;text-align:center;" class="botCenter">
+        版权 © XXXX
+    </div>
 </body>
 </html>
